@@ -1,0 +1,195 @@
+/*
+colors
+
+yellow: #ffb300
+blue: #1a237e
+black: #161925
+dark blue: #23395b
+purple: #31263e
+*/
+
+body{
+  font-family: 'Muli', sans-serif;
+  color: #1a237e;
+  background-color: #23395b;
+}
+.s-yellow{
+  background-color: #ffb300 !important;
+}
+.s-yellow-text{
+  color: #ffb300;
+}
+.s-blue{
+  background-color: #1a237e;
+}
+.s-blue-text{
+  color: #1a237e;
+}
+.s-black{
+  background-color: #161925;
+}
+.s-black-text{
+  color: #161925;
+}
+.s-dark-blue{
+  background-color: #23395b;
+}
+.s-dark-blue-text{
+  color: #23395b;
+}
+.s-purple{
+  background-color: #31263e;
+}
+.s-purple-text{
+  color: #31263e;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: #ffb300 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #ffb300 !important;
+   box-shadow: 0 1px 0 0 #ffb300 !important
+ }
+
+ .animation-container{
+  overflow: visible !important;
+ }
+
+.map-bg{
+  background-image: url('../img/map.jpg');
+  background-size: cover;
+}
+
+.no-padding{
+padding: 0px !important;
+}
+
+.v-margin{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.v-margin-small{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.left-pill{
+  border-radius: 0 800px 800px 0;
+}
+
+.right-pill{
+  border-radius: 800px 0 0 800px;
+}
+
+/* Section separators */
+/* Componenent CSS*/
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* General styles and layout */
+
+body {
+  background: #161925;
+  color: #fff;
+  overflow-x:hidden;
+}
+
+.container {
+  overflow: hidden;
+  /* we don't want the pseudo-elements sticking out */
+}
+
+.container svg {
+  display: block;
+}
+
+section {
+  position: relative;
+  padding: 10em 0;
+  background: #161925;
+  color: #fff;
+}
+
+.text:first-child {
+  text-align: right;
+}
+
+.text:nth-child(2) {
+  text-align: left;
+}
+
+.icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  font-size: 8em;
+  line-height: 2em;
+  margin: 0 auto;
+}
+
+section.color h2 {
+  color: #fff;
+}
+
+.color {
+  background: #3498db;
+}
+
+
+/*** Individual section styles and separators ***/
+
+
+/* Common style for pseudo-elements */
+
+section::before,
+section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: ##161925;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+  height: 50%;
+  background: #1a237e;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-5deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+}
