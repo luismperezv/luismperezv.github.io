@@ -14,11 +14,8 @@ body{
   background-color: #23395b;
 }
 
-html,body{
+html{
   overflow-x: hidden;
-}
-body{
-  position: ;
 }
 
 .s-yellow{
