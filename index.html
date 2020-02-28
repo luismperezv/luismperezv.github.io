@@ -60,7 +60,7 @@
           <p class="flow-text s-blue-text right-align">Over 90% of our automated assessments match the average operator’s final decision.</p>
         </div>
         <div class="col center s12 m4 wow animated slideInRight">
-          <img src="img/fastBox.png" alt="fast box" class="responsive-img"
+          <img src="img/machinel.png" alt="crosshairs" class="responsive-img"
         </div>
       </div>
     </div>
@@ -102,8 +102,8 @@
   <section class="ss-style-doublediagonal white s-black-text">
     <div class="v-margin-small">
       <div class="row">
-        <div class="col s11 m4 center s-black left-pill wow animated slideInLeft">
-          <img src="img/takeoff.png" alt="plane taking off" style="width:50%;">
+        <div class="col s11 m4 center s-black left-pill wow animated slideInLeft" style="padding-top:50px; padding-bottom:50px;">
+          <img src="img/pattern.png" alt="pattern" style="width:50%;">
         </div>
         <div class=" col s12 m7 offset-m1 wow animated slideInRight">
           <p class="flow-text s-dark-blue-text">Our software searches for patterns in data hidden to the human eye. It uses over 20 variables from the parcel label information to deliver an assessment according to the courier’s standard operations.</p>
@@ -113,31 +113,33 @@
         <div class="col s11 m7 wow animated slideInLeft">
           <p class="flow-text s-blue-text right-align">Currently used by Transpheric Logistics, a customs broker agency in Mexico outsourced by FedEx and Amazon to process over 2,000 parcels daily in one airport.</p>
         </div>
-        <div class="col s12 m4 offset-m1 center s-black right-pill wow animated slideInRight">
-          <img src="img/landing.png" alt="plane landing" style="width:50%;">
+        <div class="col s12 m4 offset-m1 center s-black right-pill wow animated slideInRight" style="padding-top:50px; padding-bottom:50px;">
+          <img src="img/logistics.png" alt="logistics" style="width:50%;">
         </div>
       </div>
     </div>
   </section>
   <section class="ss-style-doublediagonal s-black" style="height:70px;">
     <div class="container wow animated fadeInUp">
-      <div class="row">
-        <div class="input-field col s12 m6 l3">
-          <input id="name" type="text" class="white-text">
-          <label for="name">Name</label>
+      <form action="https://formspree.io/mayjbllb" method="POST" name="contactForm">
+        <div class="row">
+          <div class="input-field col s12 m6 l3">
+            <input id="name" name="name" type="text" class="white-text">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s12 m6 l3">
+            <input id="email" type="email" name="email" class="validate white-text">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12 m6 l3">
+            <input id="phone" type="text" name="phone" class="white-text">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-field col s12 m6 l3 center">
+            <button class="btn waves-effect s-yellow" type="submit" name="action">Schedule a demo</button>
+          </div>
         </div>
-        <div class="input-field col s12 m6 l3">
-          <input id="email" type="email" class="validate white-text">
-          <label for="email">Email</label>
-        </div>
-        <div class="input-field col s12 m6 l3">
-          <input id="phone" type="text" class="white-text">
-          <label for="phone">Phone</label>
-        </div>
-        <div class="input-field col s12 m6 l3 center">
-          <a href="" class="btn s-yellow">Schedule a demo</a>
-        </div>
-      </div>
+      </form>
     </div>
     <div class="container">
       <div class="row">
@@ -165,7 +167,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     wow = new WOW({
-      offset: 30,
+      offset: 5,
       mobile: true,
       live: false
     })
