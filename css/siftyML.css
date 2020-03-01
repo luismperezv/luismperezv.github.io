@@ -11,13 +11,12 @@ purple: #31263e
 body{
   font-family: 'Muli', sans-serif;
   color: #1a237e;
-  background-color: #23395b;
+  background-color: #161925;
 }
 
-html{
+.general-container{
+  width: 100vw;
   overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .s-yellow{
@@ -70,6 +69,11 @@ html{
   background-size: cover;
 }
 
+.tagline{
+  margin-top: 0px;
+  padding: 300px 0 100px 0;
+}
+
 .map-bg-2{
   background-image: url('../img/map2.jpg');
   background-size: cover;
@@ -89,119 +93,35 @@ padding: 0px !important;
   margin-bottom: 50px;
 }
 
+.v-padding-small{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
 .left-pill{
   border-radius: 0 800px 800px 0;
+  padding: 8% !important;
 }
 
 .right-pill{
   border-radius: 800px 0 0 800px;
+  padding: 8% !important;
 }
 
-/* Section separators */
-/* Componenent CSS*/
-
-*,
-*:after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-/* General styles and layout */
-
-body {
-  background: #161925;
-  color: #fff;
-  overflow-x:hidden;
-}
-
-.container {
-  overflow: hidden;
-  /* we don't want the pseudo-elements sticking out */
-}
-
-.container svg {
-  display: block;
-}
-
-section {
-  position: relative;
-  padding: 10em 0;
-  background: #161925;
-  color: #fff;
-}
-
-.text:first-child {
-  text-align: right;
-}
-
-.text:nth-child(2) {
-  text-align: left;
-}
-
-.icon {
-  display: block;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
-  color: #fff;
-  text-align: center;
-  font-size: 8em;
-  line-height: 2em;
+.container-responsive {
   margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
-section.color h2 {
-  color: #fff;
+@media only screen and (min-width: 601px) {
+  .container-responsive {
+    width: 100%;
+  }
 }
 
-.color {
-  background: #3498db;
-}
-
-
-/*** Individual section styles and separators ***/
-
-
-/* Common style for pseudo-elements */
-
-section::before,
-section::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-/* Double Diagonal line */
-
-.ss-style-doublediagonal {
-  z-index: 1;
-  padding-top: 6em;
-  background: #161925;
-}
-
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  -webkit-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-.ss-style-doublediagonal::before {
-  height: 50%;
-  background: #ffb300;
-  -webkit-transform: rotate(-4deg);
-  transform: rotate(-5deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
+@media only screen and (min-width: 993px) {
+  .container-responsive {
+    width: 100%;
+  }
 }
