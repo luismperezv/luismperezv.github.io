@@ -13,6 +13,14 @@
   <link href="css/siftyML.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDYD87DG1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DDYD87DG1K');
+  </script>
 </head>
 
 <body>
@@ -27,16 +35,42 @@
     <section class="map-bg-2">
       <div class="container wow animated slideInDown">
         <h5 class="header col s12 white-text center tagline">We create Machine Learning software to make International Trade more efficient.</h5>
-        <div class="center">
-          <a href="#contactForm" id="cta" class="btn-large waves-effect waves-light s-yellow v-margin-small">Contact Us</a>
+        <div class="row">
+          <div class="col s12 m6 center">
+            <a href="#how" class="btn-large waves-effect waves-light s-yellow v-margin-small">How?</a>
+          </div>
+          <div class="col s12 m6 center">
+            <a href="#contactForm" id="cta" class="btn-large waves-effect waves-light s-yellow v-margin-small">Contact Us</a>
+          </div>
         </div>
       </div>
     </section>
-    <div class="white" style="margin:0; padding:0;">
+    <div class="white" style="margin:0; padding:0;" id="how">
       <img src="img/divider.png" alt="divider">
     </div>
     <section class="white s-black-text">
-      <div class="v-padding-small container">
+      <div class="row">
+        <div class="col s12 center">
+          <p class="flow-text">How do we do it?</p>
+        </div>
+      </div>
+      <div class="row" style="margin:0; padding:0;">
+        <div class="col s12 m6">
+          <div class="icon-block center">
+            <h5 class="center">For international parcels:</h5>
+            <img src="img/logistics.png" alt="plane landing" style="width:30%;" class="wow animated fadeInUp">
+            <p style="margin:0; padding:0 10% 10% 10%;">Our software allows for parcel triage to be done in seconds. As a result, increase +30% of parcel throughput at Customs. Our software works for inbound and outbound international parcels.</p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="icon-block center">
+            <h5 class="center">For cargo:</h5>
+            <img src="img/takeoff.png" alt="plane taking off" style="width:30%;" class="wow animated fadeInUp">
+            <p style="margin:0; padding:0 10% 10% 10%;">Digitise PDF invoices in seconds to create customs declarations. We will help you pre-fill data for customs declarations in seconds. Allow customs clerks to work with superior software to increase efficiency.</p>
+          </div>
+        </div>
+      </div>
+      <!--div class="v-padding-small container">
         <div class="row">
           <div class="col s12 m4 center wow animated slideInLeft">
             <img src="img/fastBox.png" alt="fast box" class="responsive-img responsive-icons">
@@ -53,36 +87,49 @@
             <p class="flow-text s-dark-blue-text right-align">Over 90% of our automated assessments match the average operator’s final decision.</p>
           </div>
         </div>
-      </div>
+      </div-->
     </section>
     <div class="" style="margin:0; padding:0;">
       <img src="img/divider.png" alt="divider">
     </div>
     <section class="s-black white-text">
-      <div class="v-padding-small container">
+      <div class="v-padding-small">
         <div class="row">
           <div class="col s12 center">
-            <p class="flow-text">We apply software technology to solve bottlenecks:</p>
+            <p class="flow-text">We apply cloud software technology to solve bottlenecks:</p>
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m4">
+            <div class="icon-block center">
+              <img src="img/fastBox.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
+            </div>
+            <div class="icon-block center hide-on-small-only">
+              <img src="img/next.png" alt="arrow" style="width:50%; margin:-100% 0 0 75%;" class="wow animated fadeInUp">
+            </div>
+            <p class="center" style="margin:0; padding:0 10% 10% 10%;">Data from parcels or cargo invoices</p>
+            <div style="display:none;" class="icon-block center show-on-small">
+              <img src="img/down-arrow.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block center">
+              <img src="img/fastBox.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
+            </div>
+            <div class="icon-block center hide-on-small-only ">
+              <img src="img/next.png" alt="arrow" style="width:50%; margin:-100% 0 0 75%;" class="wow animated fadeInUp">
+            </div>
+            <p class="center" style="margin:0; padding:0 10% 10% 10%;">Sifty ML cloud</p>
+            <div style="display:none;" class="icon-block center show-on-small">
+              <img src="img/down-arrow.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
+            </div>
+          </div>
+          <div class="col s12 m4">
             <div class="icon-block center">
               <img src="img/landing.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
-              <h5 class="center">Inbound parcels</h5>
-              <p>Normally, humans have to decide whether a parcel goes or not into the transport.</p>
+              <p style="margin:0; padding:0 10% 10% 10%;">Receive the information you need to speed up your process</p>
             </div>
           </div>
-          <div class="col s12 m6">
-            <div class="icon-block center">
-              <img src="img/takeoff.png" alt="plane taking off" style="width:50%;" class="wow animated fadeInUp">
-              <h5 class="center">Outbound parcels</h5>
-              <p>Currently, a large team has to open every parcel to assess which parcels need a second more thorough inspection.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row center">
-          <a href="#contactForm" id="cta" class="btn-large waves-effect waves-light s-yellow v-margin-small">More info</a>
         </div>
       </div>
     </section>
@@ -90,6 +137,16 @@
       <img src="img/divider.png" alt="divider">
     </div>
     <section class="white s-black-text">
+      <div class="row">
+        <div class="col s12 center">
+          <p class="flow-text">Applied Machine Learning state-of-the-art software</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <p class="flow-text">Our software searches for patterns in data hidden to the human eye. It uses all possible variables from the data provided to:</p>
+        </div>
+      </div>
       <div class="v-padding-small">
         <div class="row">
           <div class="col s11 m4 center wow animated slideInLeft left-pill s-black">
@@ -97,7 +154,7 @@
           </div>
           <div class="col s12 m7 push-m1 wow animated slideInRight">
             <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text" style="padding-right:10%;">Our software searches for patterns in data hidden to the human eye. It uses over 20 variables from the parcel label information to deliver an assessment according to the courier’s standard operations.</p>
+              <p class="flow-text s-dark-blue-text" style="padding-right:10%;">Triage parcels in the categories needed depending on the country of operation.</p>
             </div>
           </div>
         </div>
@@ -107,7 +164,7 @@
           </div>
           <div class="col s12 m7 pull-m4 wow animated slideInLeft">
             <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text right-align" style="padding-left:5%;">Currently used by Transpheric Logistics, a customs broker agency in Mexico outsourced by FedEx and Amazon to process over 2,000 parcels daily in one airport.</p>
+              <p class="flow-text s-dark-blue-text right-align" style="padding-left:5%;">Retrieve information from PDF invoices with precision and turn it into files that the user will upload to the customs declarations system.</p>
             </div>
           </div>
         </div>
@@ -117,6 +174,9 @@
       <img src="img/divider.png" alt="divider">
     </div>
     <section class="s-black white-text map-bg-2">
+      <div class="container center">
+        <p class="flow-text">Contact us</p>
+      </div>
       <div class="container wow animated fadeInUp v-padding-small">
         <form action="https://formspree.io/mayjbllb" method="POST" name="contactForm" id="contactForm">
           <div class="row">
@@ -132,12 +192,28 @@
               <input id="phone" type="text" name="phone" class="white-text">
               <label for="phone">Phone</label>
             </div>
+            <div class="col s12 m6 l3 center">
+              <img src="img/recaptcha_mock.png" alt="recaptcha" class="responsive-img">
+            </div>
             <div class="input-field col s12 m6 l3 center">
               <button class="btn waves-effect s-yellow" type="submit" name="action">Schedule a demo</button>
             </div>
           </div>
+          <div>
+            <p class="white-text responsive-text">We do not sell or share your information with anyone. By sending this form, you agree to be contacted by someone on behalf of Sifty ML Ltd. for commercial purposes.</p>
+          </div>
           <div class="v-padding-small">
-            <p class="white-text responsive-text">Increase parcel processing <a href="mailto:efficiency@siftyml.com" class="s-yellow-text">e​fficiency@siftyml.com</a></p>
+            <div class="row">
+              <div class="col s12 m6"><p class="white-text">
+                <p class="responsive-text">
+                  <a class="s-yellow-text" href="privacy.html">Privacy</a> | <a class="s-yellow-text" href="terms.html">Terms of use</a>
+                  <a class="hide" href="">Third party software</a>
+                </p>
+              </div>
+              <div class="col s12 m6"><p class="white-text responsive-text right">
+                <p class="responsive-text right">© Sifty ML Ltd. 2020 -> Sifty ML Ltd. 2021</p>
+              </div>
+            </div>
           </div>
         </form>
       </div>
