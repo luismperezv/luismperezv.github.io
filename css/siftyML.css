@@ -51,6 +51,7 @@ purple: #31263e
 
 #CaptchaInput {
 	border: #ffb300 2px solid;
+  text-align: center;
   color: white;
 	margin: 3px 0px 1px 0px;
 	width: 105px;
