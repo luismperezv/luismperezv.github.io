@@ -182,44 +182,99 @@
         <p class="flow-text-l">Contact us</p>
       </div>
       <div class="container wow animated fadeInUp v-padding-small">
-        <form action="https://formspree.io/mayjbllb" method="POST" name="contactForm" id="contactForm">
+        <form action="https://formspree.io/mayjbllb" method="POST"  onsubmit="return checkform(this);" name="contactForm" id="contactForm">
           <div class="row">
-            <div class="input-field col s12 m6 l3">
+            <div class="input-field col s12 m6">
               <input id="name" name="name" type="text" class="white-text">
               <label for="name">Name</label>
             </div>
-            <div class="input-field col s12 m6 l3">
+            <div class="input-field col s12 m6">
               <input id="email" type="email" name="email" class="validate white-text">
               <label for="email">Email</label>
             </div>
-            <div class="input-field col s12 m6 l3">
+            <div class="input-field col s12 m6">
               <input id="phone" type="text" name="phone" class="white-text">
               <label for="phone">Phone</label>
             </div>
-            <div class="col s12 m6 l3 center">
-              <img src="img/recaptcha_mock.png" alt="recaptcha" class="responsive-img">
+            <div class="col s12 m6 center">
+              <!-- START CAPTCHA -->
+              <br>
+              <div class="capbox">
+
+              <div id="CaptchaDiv"></div>
+
+              <div class="capbox-inner">
+              Type the number:<br>
+
+              <input type="hidden" id="txtCaptcha">
+              <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+              </div>
+              </div>
+              <br><br>
+              <!-- END CAPTCHA -->
             </div>
-            <div class="input-field col s12 m6 l3 center">
+            <div class="input-field col s12 center">
               <button class="btn waves-effect s-yellow" type="submit" name="action">Schedule a demo</button>
             </div>
           </div>
-          <div>
-            <p class="white-text responsive-text">We do not sell or share your information to or with any third parties. By submitting this form, you agree to be contacted by Sifty ML Ltd. to discuss more about our services.</p>
-          </div>
-          <div class="v-padding-small">
-            <div class="row">
-              <div class="col s12 m6"><p class="white-text">
-                <p class="responsive-text">
-                  <a class="s-yellow-text" href="privacy.html">Privacy</a> | <a class="s-yellow-text" href="terms.html">Terms of use</a>
-                  <a class="hide" href="">Third party software</a>
-                </p>
-              </div>
-              <div class="col s12 m6"><p class="white-text responsive-text right">
-                <p class="responsive-text right">© Sifty ML Ltd. 2020 -> Sifty ML Ltd. 2021</p>
-              </div>
+        </form>
+        <script type="text/javascript">
+          // Captcha Script
+          function checkform(theform){
+            var why = "";
+            if(theform.CaptchaInput.value == ""){
+              why += "- Please Enter CAPTCHA Code.\n";
+            }
+            if(theform.CaptchaInput.value != ""){
+              if(ValidCaptcha(theform.CaptchaInput.value) == false){
+              why += "- The CAPTCHA Code Does Not Match.\n";
+              }
+            }
+            if(why != ""){
+              alert(why);
+              return false;
+            }
+          }
+          var a = Math.ceil(Math.random() * 9)+ '';
+          var b = Math.ceil(Math.random() * 9)+ '';
+          var c = Math.ceil(Math.random() * 9)+ '';
+          var d = Math.ceil(Math.random() * 9)+ '';
+          var e = Math.ceil(Math.random() * 9)+ '';
+          var code = a + b + c + d + e;
+          document.getElementById("txtCaptcha").value = code;
+          document.getElementById("CaptchaDiv").innerHTML = code;
+          // Validate input against the generated number
+          function ValidCaptcha(){
+            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+            if (str1 == str2){
+              return true;
+            }else{
+              return false;
+            }
+          }
+          // Remove the spaces from the entered and generated code
+          function removeSpaces(string){
+            return string.split(' ').join('');
+          }
+        </script>
+        <div>
+          <p class="white-text responsive-text">We do not sell or share your information to or with any third parties. By submitting this form, you agree to be contacted by Sifty ML Ltd. to discuss more about our services.</p>
+        </div>
+        <div class="v-padding-small">
+          <div class="row">
+            <div class="col s12 m6"><p class="white-text">
+              <p class="responsive-text">
+                <a class="s-yellow-text" href="privacy.html">Privacy</a> | <a class="s-yellow-text" href="terms.html">Terms of use</a>
+                <a class="hide" href="">Third party software</a>
+              </p>
+            </div>
+            <div class="col s12 m6"><p class="white-text responsive-text right">
+              <p class="responsive-text right">© Sifty ML Ltd. 2020 -> Sifty ML Ltd. 2021</p>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   </div><!--end of general container-->
