@@ -1,237 +1,35 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-
+<html>
 <head>
-  <title>Sifty ML</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- CSS -->
-  <link href="css/siftyML.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDYD87DG1K"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-DDYD87DG1K');
-  </script>
+  <meta charset="UTF-8">
+  <title>Taxonomical Classification</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row-reverse; /* This places items from right to left */
+      gap: 10px;
+      padding: 20px;
+      background: #e8e8e8;
+    }
+    .box {
+      padding: 10px 15px;
+      border: 1px solid #333;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="navbar-fixed">
-    <nav class="s-black" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" alt="siftyML logo" style="height:60px;"></a>
-      </div>
-    </nav>
+  <div class="container">
+    <div class="box">Domain</div>
+    <div class="box">Kingdom</div>
+    <div class="box">Phylum</div>
+    <div class="box">Class</div>
+    <div class="box">Order</div>
+    <div class="box">Family</div>
+    <div class="box">Genus</div>
+    <div class="box">Species</div>
   </div>
-  <div class="general-container">
-    <section class="map-bg-2">
-      <div class="container wow animated slideInDown">
-        <h5 class="header col s12 white-text center tagline">We create Machine Learning software to make International Trade more efficient.</h5>
-        <div class="row">
-          <div class="col s12 m6 center">
-            <a href="#how" class="btn-large waves-effect waves-light s-yellow v-margin-small">How?</a>
-          </div>
-          <div class="col s12 m6 center">
-            <a href="#contactForm" id="cta" class="btn-large waves-effect waves-light s-yellow v-margin-small">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="white" style="margin:0; padding:0;" id="how">
-      <img src="img/divider.png" alt="divider">
-    </div>
-    <section class="white s-black-text">
-      <div class="row">
-        <div class="col s12 center">
-          <p class="flow-text-l">How do we do it?</p>
-        </div>
-      </div>
-      <div class="row" style="margin:0; padding:0;">
-        <div class="col s12 m6">
-          <div class="icon-block center">
-            <h5 class="center">For international parcels:</h5>
-            <img src="img/international.png" alt="plane landing" style="width:30%;" class="wow animated fadeInUp">
-            <p style="margin:0; padding:0 10% 10% 10%;">Our software allows for parcel triage to be done in seconds. As a result, increase +30% of parcel throughput at Customs. Our software works for inbound and outbound international parcels.</p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="icon-block center">
-            <h5 class="center">For cargo:</h5>
-            <img src="img/takeoff.png" alt="plane taking off" style="width:30%;" class="wow animated fadeInUp">
-            <p style="margin:0; padding:0 10% 10% 10%;">Digitise PDF invoices in seconds to create customs declarations. We will help you pre-fill data for customs declarations in seconds. Allow customs clerks to work with superior software to increase efficiency.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="" style="margin:0; padding:0;">
-      <img src="img/divider.png" alt="divider">
-    </div>
-    <section class="s-black white-text">
-      <div class="v-padding-small">
-        <div class="row">
-          <div class="col s12 center">
-            <p class="flow-text">We apply cloud software technology to solve bottlenecks:</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block center">
-              <img src="img/fastBox.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
-            </div>
-            <div class="icon-block center hide-on-small-only">
-              <img src="img/arrow-right.png" alt="arrow" style="width:50%; margin:-100% 0 0 75%;" class="wow animated fadeInUp">
-            </div>
-            <p class="center" style="margin:0; padding:0 10% 10% 10%;">Data from parcels or cargo invoices</p>
-            <div style="display:none;" class="icon-block center show-on-small">
-              <img src="img/arrow-down.png" alt="plane landing" style="width:15%;" class="wow animated fadeInUp">
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="icon-block center">
-              <img src="img/cloud.png" alt="cloud" style="width:50%;" class="wow animated fadeInUp">
-            </div>
-            <div class="icon-block center hide-on-small-only ">
-              <img src="img/arrow-right.png" alt="arrow" style="width:50%; margin:-100% 0 0 75%;" class="wow animated fadeInUp">
-            </div>
-            <p class="center" style="margin:0; padding:0 10% 10% 10%;">Sifty ML cloud</p>
-            <div style="display:none;" class="icon-block center show-on-small">
-              <img src="img/arrow-down.png" alt="plane landing" style="width:15%;" class="wow animated fadeInUp">
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="icon-block center">
-              <img src="img/clipboard.png" alt="plane landing" style="width:50%;" class="wow animated fadeInUp">
-              <p style="margin:0; padding:0 10% 10% 10%;">Receive the information you need to speed up your process</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="white" style="margin:0; padding:0;">
-      <img src="img/divider.png" alt="divider">
-    </div>
-    <section class="white s-black-text">
-      <div class="row">
-        <div class="col s12 center">
-          <p class="flow-text-l">Applied Machine Learning state-of-the-art software</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container">
-          <p class="flow-text">Our software searches for patterns in data hidden to the human eye. It uses all possible variables from the data provided to:</p>
-        </div>
-      </div>
-      <div class="v-padding-small hide-on-small-only">
-        <div class="row valign-wrapper" style="">
-          <div class="col s11 m4 center wow animated slideInLeft left-pill s-black" style="margin-left: 0;">
-              <img src="img/pattern.png" alt="pattern" class="responsive-img responsive-icons">
-          </div>
-          <div class="col s12 m7 push-m1 wow animated slideInRight">
-            <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text" style="padding-right:10%;">Triage parcels in the categories needed depending on the country of operation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row valign-wrapper">
-          <div class="col s11 m4 push-s1 push-m8 center wow animated slideInRight right-pill s-black" style="margin-left: 0;">
-            <img src="img/logistics.png" alt="logistics" class="responsive-img responsive-icons">
-          </div>
-          <div class="col s12 m7 pull-m4 wow animated slideInLeft">
-            <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text left-align" style="padding-left:5%;">Retrieve information from PDF invoices with precision and turn it into files that the user will upload to the customs declarations system.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="display:none;" class="v-padding-small show-on-small">
-        <div class="row" style="">
-          <div class="col s11 m4 center wow animated slideInLeft left-pill s-black" style="margin-left: 0;">
-              <img src="img/pattern.png" alt="pattern" class="responsive-img responsive-icons">
-          </div>
-          <div class="col s12 m7 push-m1 wow animated slideInRight">
-            <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text" style="padding-right:10%;">Triage parcels in the categories needed depending on the country of operation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s11 m4 push-s1 push-m8 center wow animated slideInRight right-pill s-black" style="margin-left: 0;">
-            <img src="img/logistics.png" alt="logistics" class="responsive-img responsive-icons">
-          </div>
-          <div class="col s12 m7 pull-m4 wow animated slideInLeft">
-            <div class="container-responsive">
-              <p class="flow-text s-dark-blue-text left-align" style="padding-left:5%;">Retrieve information from PDF invoices with precision and turn it into files that the user will upload to the customs declarations system.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="" style="margin:0; padding:0;">
-      <img src="img/divider.png" alt="divider">
-    </div>
-    <section class="s-black white-text map-bg-2">
-      <div class="container center">
-        <p class="flow-text-l">Contact us</p>
-      </div>
-      <div class="container wow animated fadeInUp v-padding-small" id="contactForm">
-        <form action="https://formspree.io/mayjbllb" method="POST"  onsubmit="return checkform(this);" name="contactForm">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="name" name="name" type="text" class="white-text" required>
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field col s12 m6">
-              <input id="email" type="email" name="email" class="validate white-text" required>
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field col s12 m6">
-              <input id="phone" type="text" name="phone" class="white-text" required>
-              <label for="phone">Phone</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 center">
-              <button class="btn waves-effect s-yellow" type="submit" name="action">I want to know more</button>
-            </div>
-          </div>
-        </form>
-        <div>
-          <p class="white-text responsive-text">We do not sell or share your information to or with any third parties. By submitting this form, you agree to be contacted by Sifty ML Ltd. to discuss more about our services.</p>
-        </div>
-        <div class="v-padding-small">
-          <div class="row">
-            <div class="col s12 m6"><p class="white-text">
-              <p class="responsive-text">
-                <a class="s-yellow-text" href="privacy.html">Privacy</a> | <a class="s-yellow-text" href="terms.html">Terms of use</a>
-                <a class="hide" href="">Third party software</a>
-              </p>
-            </div>
-            <div class="col s12 m6"><p class="white-text responsive-text right">
-              <p class="responsive-text right">Sifty ML Ltd. 2021</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!--end of general container-->
-
 </body>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-  wow = new WOW({
-    offset: 30,
-    mobile: true,
-  })
-  wow.init();
-</script>
 </html>
