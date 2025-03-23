@@ -1,4 +1,30 @@
-/* Reset default styles */
+/* Material Design 3 - CSS Variables */
+:root {
+    /* Color system */
+    --md-sys-color-primary: #6750A4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #EADDFF;
+    --md-sys-color-on-primary-container: #21005E;
+    --md-sys-color-surface: #FFFBFE;
+    --md-sys-color-on-surface: #1C1B1F;
+    --md-sys-color-surface-variant: #E7E0EC;
+    --md-sys-color-on-surface-variant: #49454F;
+    
+    /* Elevation */
+    --md-sys-elevation-level1: 0px 2px 3px rgba(0, 0, 0, 0.3), 0px 1px 8px 2px rgba(0, 0, 0, 0.2);
+    --md-sys-elevation-level2: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+    
+    /* Typography */
+    --md-sys-typescale-display-large: 57px;
+    --md-sys-typescale-display-medium: 45px;
+    --md-sys-typescale-headline-large: 32px;
+    --md-sys-typescale-headline-medium: 28px;
+    --md-sys-typescale-title-large: 22px;
+    --md-sys-typescale-body-large: 16px;
+    --md-sys-typescale-body-medium: 14px;
+}
+
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +32,83 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
 }
 
+/* Typography */
 h1 {
-    color: #333;
-    margin-bottom: 20px;
+    font-size: var(--md-sys-typescale-display-large);
+    font-weight: 400;
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: var(--md-sys-typescale-headline-medium);
+    font-weight: 400;
+    color: var(--md-sys-color-on-surface);
+    margin-bottom: 16px;
 }
 
 p {
-    color: #666;
-    margin-bottom: 15px;
+    font-size: var(--md-sys-typescale-body-large);
+    color: var(--md-sys-color-on-surface-variant);
+    margin-bottom: 16px;
 }
 
+/* Layout */
 .container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Cards and surfaces */
+.card {
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--md-sys-elevation-level1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: var(--md-sys-elevation-level2);
+}
+
+/* Header */
+header {
+    margin-bottom: 48px;
+}
+
+/* Main content */
+main {
+    display: grid;
+    gap: 32px;
+}
+
+section {
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--md-sys-elevation-level1);
+}
+
+/* Footer */
+footer {
+    margin-top: 48px;
+    padding: 24px;
+    text-align: center;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Projects list */
+#projects-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 } 
